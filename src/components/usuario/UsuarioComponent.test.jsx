@@ -28,7 +28,7 @@ describe('Suite de testes do usuário com os dados passados por paramentro', () 
   }
 
   beforeEach(() => {
-    render(<UsuarioComponent/>)
+    render(<UsuarioComponent nome={mock.nome} email={mock.email}/>)
   })
 
   it('Verificando se o componente esta sendo exibido em tela', () => {
